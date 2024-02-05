@@ -16,7 +16,6 @@ type App() =
     override this.Initialize() =
         this.Styles.Add (FluentTheme())
         this.RequestedThemeVariant <- Styling.ThemeVariant.Dark
-        this.Styles.Load "avares://AvaApp/Styles.xaml"
 
     override this.OnFrameworkInitializationCompleted() =
         let init(this: 'T when 'T :> Controls.ContentControl and 'T :> IViewHost) (visualRoot: Rendering.IRenderRoot) =       
